@@ -1,0 +1,14 @@
+syntax = "proto3";
+package mastervectormaster.bluechipexp.bluechipexp;
+
+import "gogoproto/gogo.proto";
+import "bluechipexp/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/mastervectormaster/bluechipExp/x/bluechipexp/types";
+
+// GenesisState defines the bluechipexp module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
